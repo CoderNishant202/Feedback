@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="icon" type="icon" href="comment.png">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="btn()">
+  <div class="container">
+    <form action="/feedback_form" method="post">
+        <h1>Give Your Feedback</h1>
+        <div class="id">
+            <input type="text" name="name"  placeholder="Enter Name">
+            <i class="far fa-user"></i>
+        </div>
+        <div class="id">
+            <input type="email" name="email"  placeholder="Enter Email"> <i class="far fa-envelope"></i>
+        </div>
+        <textarea name="feed" id="" cols="15" rows="5" placeholder="Enter Your Opinions here.."></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+ <script src="script.js"></script>
+ <script>
+  function btn(){
+    // alert("Welcome Guys")
+    confetti()
+  }
+ </script>
+</body>
+</html>
